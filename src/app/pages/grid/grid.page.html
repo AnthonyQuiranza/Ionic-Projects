@@ -1,0 +1,34 @@
+<ion-header no-border translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>grid</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding fullscreen>
+<ion-grid>
+  <!-- <ion-row>
+     <ion-col *ngFor="let c of [1,1,1,1,1,1,1,1,1,1,1,1];let i =index">
+      hola, item{{i+1}}
+    </ion-col>
+  </ion-row> -->
+
+  <ion-row>
+    <ion-col size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12"
+    *ngFor="let c of [1,1,1,1,1,1,1,1,1,1,1,1];" >
+      <ion-card>
+        <ion-img src="/assets/shapes.svg"></ion-img>
+        <ion-card-header>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          <ion-card-title>Titulo</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae nostrum inventore quam, eveniet laborum dolore illo provident ipsum ab iure quaerat earum ullam culpa. Dolorem impedit molestias dolorum facere sit.
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
